@@ -19,11 +19,11 @@ s = 'azcbobobegghakl'
 
 word = 'bob'
 num_of_bobs = 0
-index = 0
 
 for char in range(0, len(s)):
-    a_word = s[index:index+3]
+    a_word = s[char:char+len(word)]
+    
     if a_word == 'bob':
         num_of_bobs += 1
-    index += 1
+
 print('Number of times bob occurs is:', num_of_bobs)
